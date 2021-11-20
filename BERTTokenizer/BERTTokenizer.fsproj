@@ -10,6 +10,7 @@
     <PackageProjectUrl>https://github.com/fwaris/BERTTokenizer</PackageProjectUrl>
     <RepositoryUrl>https://github.com/fwaris/BERTTokenizer</RepositoryUrl>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageId>FsBERTTokenizer</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

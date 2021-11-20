@@ -7,5 +7,10 @@ let vocab = BERTTokenizer.Vocabulary.loadFromFile vocabFile
 
 let ftrs = BERTTokenizer.Featurizer.toFeatures vocab true 512 sampleText ""
 
+#r "nuget: libtorch-cpu-win-x64"
+#r "nuget: TorchSharp"
+open TorchSharp
 
+let ts = torch.tensor(ResizeArray(ftrs.InputIds ), dtype=torch.int64)
 
+let x = torch.arange(12L)
